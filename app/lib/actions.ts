@@ -33,7 +33,7 @@ export async function createInvoice(formData: FormData) {
     } catch (error) {
       console.error('Database Error: Failed to Create Invoice.', error);
     }
-    
+
     revalidatePath('/dashboard/invoices');
     redirect('/dashboard/invoices');
 
